@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-left: -3px;
+  margin-right: -3px;
+}
+
+.movie-card {
+  display: flex;
+  width: calc(33.33% - 20px);
+  align-items: flex-start;
+  border: 1px solid rgb(161, 158, 158);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(226, 223, 223);
+  transition: transform 0.3s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-card {
+    width: calc(90% - 20px);
+    margin: 10px;
+  }
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  max-width: 150px;
+  height: 300px;
+  border-radius: 12px;
+}
+
+.movie-details {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  margin-left: 10px;
+}
+.movie-details a {
+  text-decoration: none;
+}
+.movie-details h1 {
+  text-align: center;
+}
+
+.movie-info a {
+  text-decoration: none;
+}
+.movie-info p {
+  text-align: justify;
+  color: rgb(82, 69, 69);
+}
+
+.red-text {
+  background-color: red;
+  color: white;
+}
+
+.yellow-text {
+  background-color: yellow;
+  color: gray;
+}
+
+.green-text {
+  background-color: green;
+  color: white;
+}
+
+.rank {
+  text-align: end;
+}
+
+.top {
+  color: rgb(136, 143, 141);
+  font-size: 0.7rem;
+}
+#resumen {
+  color: rgb(104, 103, 103);
+  font-size: 0.8rem;
+}
